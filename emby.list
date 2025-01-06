@@ -1,3 +1,3 @@
 #垃圾影视
-DOMAIN-SUFFIX,emby.moe
-DOMAIN-KEYWORD,filmtoday
+DOMAIN-SUFFIX,emby.moe:80
+DOMAIN-SUFFIX,filmtoday.top:443
