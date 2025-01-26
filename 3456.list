@@ -40,8 +40,8 @@ DOMAIN,emby3.mcjoker.xyz
 DOMAIN,emby.wenjian.de
 
 # > 墨云阁
-DOMAIN,a.mobaiemby.site
-DOMAIN,fast.vfing.de
+DOMAIN-SUFFIX,a.mobaiemby.site
+DOMAIN-SUFFIX,fast.vfing.de
 
 # > 探花TV
 DOMAIN-SUFFIX,tanhuatv.site
