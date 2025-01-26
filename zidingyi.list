@@ -1,3 +1,7 @@
+DOMAIN-SUFFIX,tiangong.cn
+
+
+
 #BT下载
 PROCESS-NAME,aria2c,DIRECT
 PROCESS-NAME,BitComet,DIRECT
