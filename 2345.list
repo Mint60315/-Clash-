@@ -48,3 +48,10 @@ DOMAIN-SUFFIX,tanhuatv.site,DIRECT
 
 # > 见手青
 DOMAIN,jsq.mooguu.xyz,DIRECT
+
+# > 西瓜服
+DOMAIN,spare.1024.name,DIRECT
+DOMAIN,1024.name
+
+# > 月饼
+DOMAIN-SUFFIX,emby.my,DIRECT
