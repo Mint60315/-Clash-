@@ -2,7 +2,7 @@
 DOMAIN,filmtoday.emby.moe,DIRECT
 
 # > 起点站
-DOMAIN-SUFFIX,favoritewife.com
+DOMAIN-SUFFIX,favoritewife.com,DIRECT
 DOMAIN,qdz-de.vfing.de
 DOMAIN,qdz-hk-0.vfing.de
 DOMAIN,qdz-hk-1.vfing.de
@@ -11,40 +11,40 @@ DOMAIN,qdz-hk-1.vfing.de
 DOMAIN-SUFFIX,misty.cx
 
 # > peach
-DOMAIN-SUFFIX,embymv.link
+DOMAIN-SUFFIX,embymv.link,DIRECT
 
 # > July
 DOMAIN,alist7.eu.org
-DOMAIN,july.vfing.de
+DOMAIN,july.vfing.de,DIRECT
 DOMAIN,july-hk.vfing.de
 DOMAIN,july-sg.vfing.de
 DOMAIN,july-us.vfing.de
 
 # > 二次元
-DOMAIN,media.nijigem.by
+DOMAIN,media.nijigem.by,DIRECT
 DOMAIN,nx.cdn.bgp.yt
 DOMAIN,ct.cdn.bgp.yt
 DOMAIN,us-w.cdn.bgp.yt
 DOMAIN,cu.cdn.bgp.yt
 
 # > 惊蛰
-DOMAIN,emby.jingzhe.pro
+DOMAIN,emby.jingzhe.pro,DIRECT
 
 # > Saturday.lite
-DOMAIN,lite.saturday.video
+DOMAIN,lite.saturday.video,DIRECT
 
 # > 叔服
-DOMAIN,emby3.mcjoker.xyz
+DOMAIN,emby3.mcjoker.xyz,DIRECT
 
 # > 稳健服
-DOMAIN,emby.wenjian.de
+DOMAIN,emby.wenjian.de,DIRECT
 
 # > 墨云阁
-DOMAIN-SUFFIX,a.mobaiemby.site
+DOMAIN,2pfdml.mobaiemby.site,DIRECT
 DOMAIN-SUFFIX,fast.vfing.de
 
 # > 探花TV
-DOMAIN-SUFFIX,tanhuatv.site
+DOMAIN-SUFFIX,tanhuatv.site,DIRECT
 
 # > 见手青
-DOMAIN,jsq.mooguu.xyz
+DOMAIN,jsq.mooguu.xyz,DIRECT
