@@ -2,16 +2,16 @@
 DOMAIN,filmtoday.emby.moe,DIRECT
 
 # > 起点站
-DOMAIN-SUFFIX,favoritewife.com,DIRECT
+DOMAIN,favoritewife.com,DIRECT
 DOMAIN,qdz-de.vfing.de
 DOMAIN,qdz-hk-0.vfing.de
 DOMAIN,qdz-hk-1.vfing.de
 
 # > Misty
-DOMAIN-SUFFIX,misty.cx
+DOMAIN,misty.cx
 
 # > peach
-DOMAIN-SUFFIX,embymv.link,DIRECT
+DOMAIN,embymv.link,DIRECT
 
 # > July
 DOMAIN,alist7.eu.org
@@ -41,10 +41,10 @@ DOMAIN,emby.wenjian.de,DIRECT
 
 # > 墨云阁
 DOMAIN,2pfdml.mobaiemby.site,DIRECT
-DOMAIN-SUFFIX,fast.vfing.de
+DOMAIN,fast.vfing.de
 
 # > 探花TV
-DOMAIN-SUFFIX,tanhuatv.site,DIRECT
+DOMAIN,tanhuatv.site,DIRECT
 
 # > 见手青
 DOMAIN,jsq.mooguu.xyz,DIRECT
@@ -54,4 +54,4 @@ DOMAIN,spare.1024.name,DIRECT
 DOMAIN,1024.name
 
 # > 月饼
-DOMAIN-SUFFIX,emby.my,DIRECT
+DOMAIN,emby.my,DIRECT
