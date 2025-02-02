@@ -1,6 +1,3 @@
-#天工
-DOMAIN-SUFFIX,tiangong.cn,DIRECT
-
 #BT下载
 PROCESS-NAME,aria2c,DIRECT
 PROCESS-NAME,BitComet,DIRECT
