@@ -1,3 +1,62 @@
+# > 垃圾影视(Filmtoday)
+DOMAIN,filmtoday.emby.moe,DIRECT
+
+# > 起点站
+DOMAIN,favoritewife.com,DIRECT
+#DOMAIN,qdz-de.vfing.de
+#DOMAIN,qdz-hk-0.vfing.de
+#DOMAIN,qdz-hk-1.vfing.de
+
+# > Misty
+#DOMAIN,misty.cx
+
+# > peach
+DOMAIN,embymv.link,DIRECT
+
+# > July
+#DOMAIN,alist7.eu.org
+DOMAIN,july.vfing.de,DIRECT
+#DOMAIN,july-hk.vfing.de
+#DOMAIN,july-sg.vfing.de
+#DOMAIN,july-us.vfing.de
+
+# > 二次元
+DOMAIN,media.nijigem.by,DIRECT
+#DOMAIN,nx.cdn.bgp.yt
+#DOMAIN,ct.cdn.bgp.yt
+#DOMAIN,us-w.cdn.bgp.yt
+#DOMAIN,cu.cdn.bgp.yt
+
+# > 惊蛰
+DOMAIN,emby.jingzhe.pro,DIRECT
+
+# > Saturday.lite
+DOMAIN,lite.saturday.video,DIRECT
+
+# > 叔服
+DOMAIN,emby3.mcjoker.xyz,DIRECT
+
+# > 稳健服
+DOMAIN,emby.wenjian.de,DIRECT
+
+# > 墨云阁
+DOMAIN,2pfdml.mobaiemby.site,DIRECT
+#DOMAIN,fast.vfing.de
+
+# > 探花TV
+DOMAIN,tanhuatv.site,DIRECT
+
+# > 见手青
+DOMAIN,jsq.mooguu.xyz,DIRECT
+
+# > 西瓜服
+DOMAIN,spare.1024.name,DIRECT
+#DOMAIN,1024.name
+
+# > 月饼
+DOMAIN,a.emby.my,DIRECT
+DOMAIN,b.emby.my,DIRECT
+
 #BT下载
 PROCESS-NAME,aria2c,DIRECT
 PROCESS-NAME,BitComet,DIRECT
