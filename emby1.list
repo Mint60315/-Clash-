@@ -56,3 +56,6 @@ DOMAIN,1024.name
 # > 月饼
 DOMAIN,a.emby.my
 DOMAIN,b.emby.my
+
+# > 比比
+DOMAIN-SUFFIX,beebi.org
