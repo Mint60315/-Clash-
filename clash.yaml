@@ -113,7 +113,7 @@ proxy-groups:
   ###- {name: 🇺🇸 美国节点, type: url-test, tolerance: 50, use: [🛫 机场订阅 1, 🛫 机场订阅 2], filter: "(?i)(🇺🇸|美|us|unitedstates|united states)"}
   - {name: 🇭🇰 香港节点, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(港|HK|hk|Hong Kong|HongKong|hongkong|深港))"}
   - {name: 🇺🇸 美国节点, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(美|波特兰|美国|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|UnitedStates))"}
-  - {name: 🇯🇵 日本节点, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|🇯🇵))"}
+  - {name: 🇯🇵 日本节点, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|(?i)Japan|🇯🇵|(?i)Tokyo))"}
   - {name: 🇸🇬 新加坡节点, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(新加坡|坡|狮城|SG|Singapore))"}
   - {name: 🇹🇼 台湾节点, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(台|新北|台湾|彰化|TW|Taiwan))"}
   - {name: 🇰🇷 韩国节点, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(KR|Korea|KOR|首尔|韩|韓))"}
