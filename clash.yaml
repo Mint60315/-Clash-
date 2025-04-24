@@ -41,7 +41,7 @@ proxy-providers:
     type: http
     url: "https://su.bestyuns.com:8888/api/v1/client/subscribe?token=5684d8e40c2787781aa3d73adbccf874&flag=clash"
     path: ./proxies/airport3.yaml
-    interval: 21600
+    interval: 86400
     ## filter: "(?i)(🇭🇰|港|hk|hongkong|hong kong|🇹🇼|台|tw|taiwan|tai wan|🇯🇵|日|jp|japan|🇸🇬|新|sg|singapore|🇺🇸|美|us|unitedstates|united states)"
     exclude-filter: "5x|5X|5倍率|4x|4X|3x|3X|客服|失联|官网|剩余|套餐"
     health-check:
@@ -135,68 +135,68 @@ proxy-groups:
 
 ## 规则集（yaml 文件每天自动更新）
 rule-providers:
+  zidingyidaili:
+    type: http
+    behavior: classical
+    format: text
+    path: ./rules/zidingyidaili.list
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Mint60315/-Clash-/refs/heads/main/zidingyidaili.list"
+    interval: 86400
+  
+  paypal:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/paypal.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/paypal.mrs"
+    interval: 86400
+
+  bybit:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/bybit.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/bybit.mrs"
+    interval: 86400
+
   private:
     type: http
     behavior: domain
     format: mrs
     path: ./rules/private.mrs
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/private.mrs"
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/private.mrs"
     interval: 86400
 
-  ads:
+  privateip:
     type: http
     behavior: domain
     format: mrs
-    path: ./rules/ads.mrs
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/ads.mrs"
+    path: ./rules/privateip.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/private.mrs"
     interval: 86400
 
-  trackerslist:
-    type: http
-    behavior: domain
-    format: mrs
-    path: ./rules/trackerslist.mrs
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/trackerslist.mrs"
-    interval: 86400
-
-  media:
-    type: http
-    behavior: domain
-    format: mrs
-    path: ./rules/media.mrs
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/media.mrs"
-    interval: 86400
-
-  games:
-    type: http
-    behavior: domain
-    format: mrs
-    path: ./rules/games.mrs
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/games.mrs"
-    interval: 86400
-
-  ai:
-    type: http
-    behavior: domain
-    format: mrs
-    path: ./rules/ai.mrs
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/ai.mrs"
-    interval: 86400
-
-  networktest:
+  Custom_Direct:
     type: http
     behavior: classical
     format: text
-    path: ./rules/networktest.list
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/networktest.list"
+    path: ./rules/Custom_Direct.list
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/main/rule/Custom_Direct.list"
     interval: 86400
 
-  tld-proxy:
+  Custom_Proxy:
     type: http
-    behavior: domain
-    format: mrs
-    path: ./rules/tld-proxy.mrs
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/tld-proxy.mrs"
+    behavior: classical
+    format: text
+    path: ./rules/Custom_Proxy.list
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/main/rule/Custom_Proxy.list"
+    interval: 86400
+
+  Direct:
+    type: http
+    behavior: classical
+    format: text
+    path: ./rules/Direct.list
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Direct/Direct.list"
     interval: 86400
 
   proxy:
@@ -204,45 +204,368 @@ rule-providers:
     behavior: domain
     format: mrs
     path: ./rules/proxy.mrs
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/proxy.mrs"
+    url: "https://gh-proxy.com/https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/proxy.mrs"
     interval: 86400
 
-  mediaip:
+  google-cn:
     type: http
-    behavior: ipcidr
+    behavior: domain
     format: mrs
-    path: ./rules/mediaip.mrs
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/mediaip.mrs"
+    path: ./rules/google-cn.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/google-cn.mrs"
     interval: 86400
 
-  gamesip:
+  category-games@cn:
     type: http
-    behavior: ipcidr
+    behavior: domain
     format: mrs
-    path: ./rules/gamesip.mrs
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/gamesip.mrs"
+    path: ./rules/category-games@cn.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-games@cn.mrs"
+    interval: 86400
+
+  Steam_CDN:
+    type: http
+    behavior: classical
+    format: text
+    path: ./rules/Steam_CDN.list
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/main/rule/Steam_CDN.list"
+    interval: 86400
+
+  category-game-platforms-download:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/category-game-platforms-download.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-game-platforms-download.mrs"
+    interval: 86400
+
+  category-public-tracker:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/category-public-tracker.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-public-tracker.mrs"
+    interval: 86400
+
+  category-communication:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/category-communication.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-communication.mrs"
+    interval: 86400
+
+  category-social-media-!cn:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/category-social-media-!cn.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-social-media-!cn.mrs"
+    interval: 86400
+
+  openai:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/openai.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/openai.mrs"
+    interval: 86400
+
+  bing:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/bing.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/bing.mrs"
+    interval: 86400
+
+  category-ai-!cn:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/category-ai-!cn.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-ai-!cn.mrs"
+    interval: 86400
+
+  github:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/github.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/github.mrs"
+    interval: 86400
+
+  category-speedtest:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/category-speedtest.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-speedtest.mrs"
+    interval: 86400
+
+  youtube:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/youtube.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/youtube.mrs"
+    interval: 86400
+
+  apple-tvplus:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/apple-tvplus.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/apple-tvplus.mrs"
+    interval: 86400
+
+  apple:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/apple.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/apple.mrs"
+    interval: 86400
+
+  microsoft:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/microsoft.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/microsoft.mrs"
+    interval: 86400
+
+  googlefcm:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/googlefcm.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/googlefcm.mrs"
+    interval: 86400
+
+  google:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/google.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/google.mrs"
+    interval: 86400
+
+  tiktok:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/tiktok.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/tiktok.mrs"
+    interval: 86400
+
+  netflix:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/netflix.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/netflix.mrs"
+    interval: 86400
+
+  disney:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/disney.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/disney.mrs"
+    interval: 86400
+
+  hbo:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/hbo.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/hbo.mrs"
+    interval: 86400
+
+  primevideo:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/primevideo.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/primevideo.mrs"
+    interval: 86400
+
+  category-emby:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/category-emby.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-emby.mrs"
+    interval: 86400
+
+  emby:
+    type: http
+    behavior: classical
+    format: text
+    path: ./rules/emby.list
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Mint60315/-Clash-/refs/heads/main/emby.list"
+    interval: 86400
+
+  spotify:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/spotify.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/spotify.mrs"
+    interval: 86400
+
+  bahamut:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/bahamut.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/bahamut.mrs"
+    interval: 86400
+
+  steam:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/steam.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/steam.mrs"
+    interval: 86400
+
+  category-games:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/category-games.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-games.mrs"
+    interval: 86400
+
+  category-entertainment:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/category-entertainment.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-entertainment.mrs"
+    interval: 86400
+
+  category-ecommerce:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/category-ecommerce.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-ecommerce.mrs"
+    interval: 86400
+
+  gfw:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/gfw.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/gfw.mrs"
     interval: 86400
 
   telegramip:
     type: http
-    behavior: ipcidr
+    behavior: domain
     format: mrs
     path: ./rules/telegramip.mrs
-    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/telegramip.mrs"
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/telegram.mrs"
+    interval: 86400
+
+  twitterip:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/twitterip.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/twitter.mrs"
+    interval: 86400
+
+  facebookip:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/facebookip.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/facebook.mrs"
+    interval: 86400
+
+  googleip:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/googleip.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/google.mrs"
+    interval: 86400
+
+  netflixip:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/netflixip.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/netflix.mrs"
+    interval: 86400
+
+  cn:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/cn.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/cn.mrs"
+    interval: 86400
+
+  cnip:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/cnip.mrs
+    url: "https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/cn.mrs"
     interval: 86400
 
 ## 规则
 rules:
-  - RULE-SET,private,🔒 私有网络
-  - RULE-SET,ads,🛑 广告域名
-  - RULE-SET,trackerslist,📋 Trackerslist
-  - RULE-SET,media,🌍 国外媒体
-  - RULE-SET,games,🎮 游戏平台
-  - RULE-SET,ai,🤖 人工智能
-  - RULE-SET,networktest,📈 网络测试
-  - RULE-SET,tld-proxy,🧱 代理域名
-  - RULE-SET,proxy,🧱 代理域名
-  - RULE-SET,mediaip,🌍 国外媒体,no-resolve
-  - RULE-SET,gamesip,🎮 游戏平台,no-resolve
-  - RULE-SET,telegramip,📲 电报消息,no-resolve
+  - RULE-SET,zidingyidaili,⚡ 自定义代理
+  - RULE-SET,paypal,💳 Paypal
+  - RULE-SET,bybit,💰 Bybit
+  - RULE-SET,private,🎯 全球直连
+  - RULE-SET,privateip,🎯 全球直连,no-resolve
+  - RULE-SET,Custom_Direct,🎯 全球直连
+  - RULE-SET,Custom_Proxy,🚀 节点选择
+  - RULE-SET,Direct,🎯 全球直连
+  - RULE-SET,google-cn,🎯 全球直连
+  - RULE-SET,category-games@cn,🎯 全球直连
+  - RULE-SET,Steam_CDN,🎯 全球直连
+  - RULE-SET,category-game-platforms-download,🎯 全球直连
+  - RULE-SET,category-public-tracker,🎯 全球直连
+  - RULE-SET,category-communication,💬 即时通讯
+  - RULE-SET,category-social-media-!cn,🌐 社交媒体
+  - RULE-SET,openai,🤖 ChatGPT
+  - RULE-SET,bing,🤖 Copilot
+  - RULE-SET,category-ai-!cn,🤖 AI服务
+  - RULE-SET,github,🚀 GitHub
+  - RULE-SET,category-speedtest,🚀 测速工具
+  - RULE-SET,youtube,📹 YouTube
+  - RULE-SET,apple-tvplus,🎥 AppleTV+
+  - RULE-SET,apple,🍎 苹果服务
+  - RULE-SET,microsoft,Ⓜ️ 微软服务
+  - RULE-SET,googlefcm,📢 谷歌FCM
+  - RULE-SET,google,🇬 谷歌服务
+  - RULE-SET,tiktok,🎶 TikTok
+  - RULE-SET,netflix,🎥 Netflix
+  - RULE-SET,disney,🎥 DisneyPlus
+  - RULE-SET,hbo,🎥 HBO
+  - RULE-SET,primevideo,🎥 PrimeVideo
+  - RULE-SET,category-emby,🎥 Emby
+  - RULE-SET,emby,🎥 Emby
+  - RULE-SET,spotify,🎻 Spotify
+  - RULE-SET,bahamut,📺 Bahamut
+  - RULE-SET,steam,🎮 Steam
+  - RULE-SET,category-games,🎮 游戏平台
+  - RULE-SET,category-entertainment,🌎 国外媒体
+  - RULE-SET,category-ecommerce,🛒 国外电商
+  - RULE-SET,gfw,🚀 GFW选择
+  - RULE-SET,telegramip,💬 即时通讯,no-resolve
+  - RULE-SET,twitterip,🌐 社交媒体,no-resolve
+  - RULE-SET,facebookip,🌐 社交媒体,no-resolve
+  - RULE-SET,googleip,🇬 谷歌服务,no-resolve
+  - RULE-SET,netflixip,🎥 Netflix,no-resolve
+  - RULE-SET,cn,🎯 全球直连
+  - RULE-SET,cnip,🎯 全球直连,no-resolve
   - MATCH,🐟 漏网之鱼
