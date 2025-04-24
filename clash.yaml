@@ -133,6 +133,14 @@ proxy-groups:
 
 ## 规则集（yaml 文件每天自动更新）
 rule-providers:
+  fakeip-filter:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./rules/fakeip-filter.mrs
+    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/fakeip-filter.mrs"
+    interval: 86400
+
   zidingyidaili:
     type: http
     behavior: classical
