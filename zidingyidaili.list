@@ -25,3 +25,5 @@ DOMAIN-SUFFIX,pythonhosted.org
 #DOMAIN,
 #肥羊后端
 DOMAIN-SUFFIX,v1.mk
+#sony图片代理
+DOMAIN,images.erabu.sony.tv
